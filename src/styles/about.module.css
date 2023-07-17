@@ -1,0 +1,37 @@
+/* about me section */
+.index-about {
+    width: 100%;
+    padding: 25px 15px 0;
+    
+  }
+  .index-about-flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 60px;
+  }
+  .index-about-img img {
+    width: 30rem;
+    border-radius: 50%;
+  }
+  .index-about-text {
+    flex-basis: 455px;
+  }
+  .index-about-text p {
+    padding: 30px 0;
+  }
+  
+  .index-about-text a {
+    font-size: 1.8rem;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    background-color: #5f00af;
+    padding: 0 20px;
+    width: fit-content;
+    
+  }
+  
+  .index-about-text a:hover {
+      background-color: #74558e;
+  }

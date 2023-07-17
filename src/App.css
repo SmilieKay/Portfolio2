@@ -1,38 +1,295 @@
-.App {
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+/* allows me to create variables and use them in the whole stylesheet */
+:root {
+  --gradient-colors: #000087, #ff00ff, #00ffff, #5f00af;
+  --word-colors: #00ffff, #000087, #ff00ff;
+}
+/*sets the font size to 10px but using percentages so it will be adjust for those that have their preferred font size larger. Setting the font to 10px makes it easier to determine the 
+size in rem for the font. */
+html {
+  font-size: 62.5%;
+}
+/*makes the background dark and sets the general font and size for font*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  background-color: #201f1f;
+}
+/*allows the website to preload the background images so they don't flicker the first time*/
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(./images/facebook-round-color.png)
+    url(./images/email-color2.png);
+}
+/*allows for a general set size*/
+.wrapper-main {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*styling for all of the h1 elements*/
+h1 {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+/*sets the style for all of the h2 elements*/
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+/*default styling for h3 */
+h3 {
+  font-size: 2.6rem;
+  line-height: 1.5;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* sets the style for all paragraph elements*/
+p {
+  font-size: 1.4rem;
+  line-height: 1.75;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*makes the cursor a pointer for links*/
+a {
+  font-size: 1.4rem;
+  line-height: 18px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+/*Burger menu styling*/
+.burger-menu,
+.burger-menu-btn {
+  display: none;
+}
+/*Responsive styling allows for different screen sizes*/
+@media only screen and (max-width: 600px) {
+  /* ! my burger menu is currently for display only until I have learned some more about javaScript*/
+  .burger-menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/burger-menu.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .burger-menu {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 900;
+    background-color: #111;
+  }
+  .burger-menu ul {
+    width: 100%;
+    height: cal(100vh - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  .burger-menu ul li {
+    flex-basis: 100%;
+    border-top: 2px solid #000;
+  }
+  .burger-menu ul li a {
+    display: block;
+    height: 100%;
+    font-size: 3rem;
+    padding: 30px 0;
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .wrapper-main {
+    width: 100%;
+  }
+  .header-main-nav {
+    display: none;
+  }
+  .header-main {
+    height: 5rem;
+  }
+  .header-main-sm {
+    padding-left: 20px;
+  }
+  /*footer section*/
+  .footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+  }
+  .footer-getintouch {
+    margin: 0 0 60px;
+  }
+
+  .footer-sitemap {
+    flex-wrap: wrap;
+  }
+
+  .footer-sitemap ul:nth-child(1) {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-sitemap ul:nth-child(1),
+  .footer-sitemap ul:nth-child(2),
+  .footer-sitemap ul:nth-child(3) {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-sitemap ul:nth-child(4) p {
+    text-align: center;
+  }
+}
+cd:root {
+  --word-colors: #00ffff, #000087, #ff00ff;
+  --gradient-colors: #000087, #ff00ff, #00ffff, #5f00af;
+}
+.wrapper-main {
+  width: 1200px;
+  margin: 0 auto;
+}
+/*provides the styling for the main section*/
+main {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: #201f1f;
+  margin-top: 12rem;
+
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+
+
+@keyframes bg-animation {
+  0% { background-position: left;}
+  100% {background-position: right;}
+}
+main p {
+  font-size: 1.8rem;
+  line-height: 1.75;
+  max-width: 50rem;
+
+}
+
+/* media responsive design make is viewable from different screen sizes*/
+
+@media only screen and (max-width: 600px) {
+  .wrapper-main {
+    width: 80%;
+  }
+  main {
+  height: fit-content;
+  margin-top: 5rem;
+    }
+    
+ 
+ 
+  main p {
+    text-align: center;
+    padding: 0 10%;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: transparent;
+    background-image: linear-gradient(140deg, var(--word-colors));
+    -webkit-background-clip: text;
+    text-shadow: 1px 2px 1px white;background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+  }
+  @keyframes bg-animation {
+    0% { background-position: left;}
+    100% {background-position: right;}
+  
+  }
+ 
+ 
+  /*Start of the category section*/
+  .index-category {
+  row-gap: 20px;
+  }
+  .index-category p {
+   padding: 15px 0 0;
+ } 
+ /*Start of the about me section*/
+
+.index-about-flex {
+  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.index-about-img {
+  width: 60%;
+
+}
+.index-about-text {
+  flex-basis: 100%;
+}
+.index-about-text h2 {
+  text-align: center;
+}
+.index-about-text p {
+  padding: 15px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.index-about-text a {
+margin: 0 auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

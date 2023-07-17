@@ -1,0 +1,68 @@
+.home-image {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(../images/neon-fire-turned.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .main-intro h1 {
+    color: transparent;
+    background-image: linear-gradient(140deg, var(--word-colors));
+    -webkit-background-clip: text;
+    background-size: 300%; 
+    font-size: 9.0rem;
+    line-height: 1.2;
+    text-shadow: 0px 3px 1px white;
+    background-size: 400%;
+    animation: bg-animation 5s infinite alternate;
+  }
+  
+  .main-intro {
+    position: relative;
+    right: 39vh;
+    top: 22vh;
+  }
+  
+  .main-quotes p {
+    color: #fff;
+    border-left: 4px solid rgb(197, 69, 22);
+    padding-left: 4vh;
+    top: -18vh;
+    margin-bottom: 4vh;
+    position: relative;
+    left: 7vh;
+  }
+  
+  .main-quotes {
+    position: relative;
+    left: 19vh;
+  }
+  
+  .main-quotes p:nth-child(2) {
+    margin-left: 289px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .main-intro {
+      position: unset;
+      padding-bottom: 8vh;
+    }
+  
+    .main-intro h1 {
+     font-size: 5rem;
+     line-height: 1.2;
+     text-align: center;
+     margin-top: 20px;
+    }
+  
+    .main-quotes {
+      display: none;
+    }
+  }
+  
