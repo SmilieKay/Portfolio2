@@ -6,7 +6,7 @@ import styles from "../styles/projects.module.css";
 import quizImage from '../images/Quiz.png';
 import tailgateImage from '../images/Tailgate.png';
 import parksImage from '../images/parks.png';
-import passImage from '../images/Password.png';
+import BrodieImage from '../images/BrodieParty.png';
 import plannerImage from '../images/Schedular.png';
 import weatherImage from '../images/Weather.png';
 
@@ -38,11 +38,11 @@ class Projects extends React.Component {
           </div>
 
           <div className={styles["index-category-box"]}>
-            <a href="https://smiliekay.github.io/03-Challenge/" className={styles["index-category-link"]}>
+            <a href="https://saint-louis-pets-554-d862dc3f7739.herokuapp.com/" className={styles["index-category-link"]}>
               <div className={styles["dark-overlay"]}>
-                <p className={styles["index-category-description"]}>This password generator allows you to answer a series of questions and will generate a secure password from your answers. It also allows you to copy the password it makes to you clip board so it is easy to use. You can click on this image to be taken to the launched page and see it in action. </p>
+                <p className={styles["index-category-description"]}>This is my 3rd  group project to make a petfinder website that uses react for the front end, GraphQL with a Node.js and Express.js serve, MongoDB, and the Mongoose ODM for the database it uses queries and mutations for retrieving, adding updating and deleting data and has authentication. </p>
               </div>
-              <img src={passImage}  alt="Password generator "/>
+              <img src={BrodieImage}  alt="cat in party hat "/>
             </a>
           </div>
 
