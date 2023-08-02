@@ -34,3 +34,32 @@
   .footer-getintouch:hover {
     border: 4px solid #00ffff;
   }
+   /* @media footer section*/
+   @media only screen and (max-width: 600px) {
+  .footer-main {
+    width: 100%;
+    padding: 60px 0 100px;
+  }
+  .footer-getintouch {
+    margin: 0 0 60px;
+  }
+
+  .footer-sitemap {
+    flex-wrap: wrap;
+  }
+
+  .footer-sitemap ul:nth-child(1) {
+    border-left: none;
+    padding-left: 0;
+  }
+  .footer-sitemap ul:nth-child(1),
+  .footer-sitemap ul:nth-child(2),
+  .footer-sitemap ul:nth-child(3) {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .footer-sitemap ul:nth-child(4) p {
+    text-align: center;
+  } }
