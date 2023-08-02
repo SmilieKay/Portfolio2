@@ -4,7 +4,7 @@
     background-image: url(../images/neon-fire-turned.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,6 +53,8 @@
       position: unset;
       padding-bottom: 8vh;
     }
+
+   
   
     .main-intro h1 {
      font-size: 5rem;
