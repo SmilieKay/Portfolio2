@@ -1,43 +1,34 @@
 
-import React, { useState } from "react";
+import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import styles from "../styles/header.module.css";
-
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-    console.log(isMenuOpen); 
-  };
-  
   return (
     <header className={styles["header-main"]}>
       <nav className={styles["header-main-nav"]}>
-        <ul className={isMenuOpen ? `${styles["burger-menu"]}` : ""}>
+        <ul>
           <li>
-            <NavLink exact to="/" onClick={handleMenuToggle}>
+            <NavLink exact to="/" >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/about" onClick={handleMenuToggle}>
+            <NavLink to="/about" >
               About Me
             </NavLink>
           </li>
           <li>
-            <NavLink to="/projects" onClick={handleMenuToggle}>
+            <NavLink to="/projects" >
               Portfolio
             </NavLink>
           </li>
           <li>
-            <NavLink to="/contact" onClick={handleMenuToggle}>
+            <NavLink to="/contact" >
               Contact Me
             </NavLink>
           </li>
           <li>
-            <NavLink to="/resume" onClick={handleMenuToggle}>
+            <NavLink to="/resume" >
               Resume
             </NavLink>
           </li>
@@ -55,8 +46,7 @@ const Header = () => {
           <div className={styles["header-main-sm-email"]}></div>
         </Link>
 
-        {/* Burger menu icon */}
-        <div className={styles["burger-menu-btn"]} onClick={handleMenuToggle}></div>
+        
       </div>
     </header>
   );

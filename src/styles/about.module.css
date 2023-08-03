@@ -35,3 +35,32 @@
   .index-about-text a:hover {
       background-color: #74558e;
   }
+
+  /*Start of the about me section @media*/
+  @media only screen and (max-width: 600px) { 
+
+  .index-about-flex {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .index-about-img {
+    width: 60%;
+  }
+  .index-about-text {
+    flex-basis: 100%;
+  }
+  .index-about-text h2 {
+    text-align: center;
+  }
+  .index-about-text p {
+    padding: 15px 0;
+    text-align: center;
+  }
+
+  .index-about-text a {
+    margin: 0 auto;
+  }
+  }
