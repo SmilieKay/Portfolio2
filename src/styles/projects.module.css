@@ -76,3 +76,14 @@
 .index-category-link:hover .index-category-description {
   opacity: 1;
 }
+
+/*Start of the category section @media */
+@media only screen and (max-width: 600px) {
+    .index-category {
+      row-gap: 20px;
+    }
+    .index-category p {
+      padding: 15px 0 0;
+    }
+ }
+
