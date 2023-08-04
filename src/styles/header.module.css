@@ -1,66 +1,71 @@
 /*The styling for the header allows the height, width, movement with flex and a gradient background color*/
 .header-main {
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 10rem;
-    background-image: linear-gradient(to bottom right, var(--gradient-colors));
-  
-  }
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10rem;
+  background-image: linear-gradient(to bottom right, var(--gradient-colors));
+}
 
-  /*this is the styling for the main navigation bar*/
+/*this is the styling for the main navigation bar*/
 .header-main-nav {
-    width: fit-content;
-    height: 100%;
-    font-weight: bold;
-  }
-  /* this provides the styling for the list items in the navigation bar*/
-  .header-main-nav ul li {
-    display: inline;
-    float: left;
-    margin-left: 30px;
-  }
-  /*this provides the styling for the links in the navigation bar*/
-  .header-main-nav ul li a {
-    padding: 0 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 100px;
-    color: #000;
-    display: block;
-    height: 100%;}
-    
-   
+  width: fit-content;
+  height: 100%;
+  font-weight: bold;
+}
 
-  /*this changes the text color of the list items in the navigation bar when the mouse is hovered over it */
-  .header-main-nav ul li a:hover {
-    color: #00ffff;
-  }
-  /*this provides the styling for the social media links in the header*/
-  .header-main-sm {
-    width: fit-content;
-    height: 100%;
-    padding-right: 60px;
-    display: flex;
-    align-items: center;
-    column-gap: 10px;
-  }
-  /*this provides the black and white facebook logo that is in the header it also sets the size*/
-  .header-main-sm-fb {
-    width: 2rem;
-    height: 2rem;
-    background-image: url(../images/facebook-circular-logo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  /*this allows the color facebook logo to show when the mouse is hovered over it*/
-  .header-main-sm-fb:hover {
-    background-image: url(../images/facebook-round-color.png);
-  }
+.header-main-nav ul {
+  display: flex;
+  list-style: none;
+}
 
-  /*this provides the black and white GitHub logo that is in the header it also sets the size*/
+/* this provides the styling for the list items in the navigation bar*/
+.header-main-nav ul li {
+  display: inline;
+  white-space: nowrap;
+  margin-left: 30px;
+}
+/*this provides the styling for the links in the navigation bar*/
+.header-main-nav ul li a {
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 100px;
+  color: #000;
+  display: block;
+  height: 100%;
+}
+
+/*this changes the text color of the list items in the navigation bar when the mouse is hovered over it */
+.header-main-nav ul li a:hover {
+  color: #00ffff;
+}
+
+/*this provides the styling for the social media links in the header*/
+.header-main-sm {
+  width: fit-content;
+  height: 100%;
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+/*this provides the black and white facebook logo that is in the header it also sets the size*/
+.header-main-sm-fb {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../images/facebook-circular-logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*this allows the color facebook logo to show when the mouse is hovered over it*/
+.header-main-sm-fb:hover {
+  background-image: url(../images/facebook-round-color.png);
+}
+
+/*this provides the black and white GitHub logo that is in the header it also sets the size*/
 .header-main-sm-github {
   width: 2rem;
   height: 2rem;
@@ -74,33 +79,60 @@
   background-image: url(../images/githubBlue.png); /* Path to your color GitHub image */
 }
 
+/*this provides the black and white email logo that is in the header */
+.header-main-sm-email {
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../images/email.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*this allows the color email logo to show when the mouse is hovered over it */
+.header-main-sm-email:hover {
+  background-image: url(../images/email-color2.png);
+}
 
-  /*this provides the black and white email logo that is in the header */
-  .header-main-sm-email {
-    width: 2rem;
-    height: 2rem;
-    background-image: url(../images/email.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  /*this allows the color email logo to show when the mouse is hovered over it */
-  .header-main-sm-email:hover {
-    background-image: url(../images/email-color2.png);
-  }
-
+.MobileNavigation {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
- 
-  
-  .wrapper-main {
-    width: 100%;
-  }
-  /* .header-main-nav {
+  .Navigation {
     display: none;
-  } */
+  }
+
+  .MobileNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 1rem;
+  }
+
+  .MobileNavigation .Hamburger {
+    top: 1rem;
+    left: 3rem;
+    cursor: pointer;
+  }
+  .header-main-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 25vh;
+    background: #000087;
+    margin-top: 1rem;
+  }
+
+  .header-main-nav ul li a {
+    color: white;
+  }
+
+  /* Keep the header-main-sm visible */
+  .header-main-sm {
+    width: 100%;
+    padding-right: 2rem;
+    justify-content: right;
+  }
+
   .header-main {
     height: 5rem;
   }
-  .header-main-sm {
-    padding-left: 20px;
-  }}
+}
