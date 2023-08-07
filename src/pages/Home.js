@@ -11,7 +11,7 @@ const CANONICAL = Config.SITE_DOMAIN + "/";
 
 const Home = () => {
   return (
-    <main>
+    <main className="main-other-pages">
       <div className={styles["home-image"]}>
         <Helmet>
           <title>{TITLE}</title>

@@ -11,7 +11,7 @@ const CANONICAL = Config.SITE_DOMAIN + "/";
 class Contact extends React.Component{
   render(){
     return(
-      <main>
+      <main className="main-other-pages">
         <div className={styles['content-container']}>
           <Helmet>
             <title>{TITLE}</title>
