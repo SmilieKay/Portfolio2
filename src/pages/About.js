@@ -13,7 +13,7 @@ const CANONICAL = Config.SITE_DOMAIN + "/";
 class About extends React.Component{
 render() {
     return(
-      <main>
+      <main className="main-other-pages">
          <Helmet>
                 <title>{TITLE}</title>
                 <link rel="canonical" href={CANONICAL}/>

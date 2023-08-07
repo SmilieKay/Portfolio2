@@ -50,6 +50,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   background-color: #201f1f;
+  height:fit-content;
 }
 /*allows the website to preload the background images so they don't flicker the first time*/
 body:after {
@@ -116,7 +117,7 @@ a {
   margin: 0 auto;
 }
 /*provides the styling for the main section*/
-main {
+.main-other-pages {
   width: 100%;
   height: calc(100vh - 100px);
   background-color: #201f1f;

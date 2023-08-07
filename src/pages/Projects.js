@@ -6,7 +6,7 @@ import styles from "../styles/projects.module.css";
 import quizImage from '../images/Quiz.png';
 import tailgateImage from '../images/Tailgate.png';
 import parksImage from '../images/parks.png';
-import BrodieImage from '../images/BrodieParty.png';
+import STLPets from '../images/stl-pets.png';
 import plannerImage from '../images/Schedular.png';
 import weatherImage from '../images/Weather.png';
 
@@ -27,7 +27,7 @@ class Projects extends React.Component {
       <div id="Projects">
         <section className={styles["index-category"]}>
           <p className={styles["index-category-title"]}> My Projects </p>
-          
+         
           <div className={styles["index-category-box"]}>
             <a href="https://smiliekay.github.io/Tron-Themed-JavaScript-Quiz/" className={styles["index-category-link"]}>
               <div className={styles["dark-overlay"]}>
@@ -42,7 +42,7 @@ class Projects extends React.Component {
               <div className={styles["dark-overlay"]}>
                 <p className={styles["index-category-description"]}>This is my 3rd  group project to make a petfinder website that uses react for the front end, GraphQL with a Node.js and Express.js serve, MongoDB, and the Mongoose ODM for the database it uses queries and mutations for retrieving, adding updating and deleting data and has authentication. </p>
               </div>
-              <img src={BrodieImage}  alt="cat in party hat "/>
+              <img src={STLPets}  alt="Dog and cat and stl pets logo "/>
             </a>
           </div>
 
@@ -82,9 +82,11 @@ class Projects extends React.Component {
               <img src={parksImage}  alt="Park Quest"/>
             </a>
           </div>
-
+          
+         
         </section>
       </div>
+      
       </main>
     );
   }
