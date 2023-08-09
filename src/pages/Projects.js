@@ -18,7 +18,7 @@ const CANONICAL = Config.SITE_DOMAIN + "/";
 class Projects extends React.Component {
   render() {
     return (
-      <main>
+      <main  className={styles["project-main"]}>
            <Helmet>
                 <title>{TITLE}</title>
                 <link rel="canonical" href={CANONICAL}/>
