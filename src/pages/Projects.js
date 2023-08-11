@@ -32,7 +32,7 @@ class Projects extends React.Component {
             <a href="https://smiliekay.github.io/Tron-Themed-JavaScript-Quiz/" className={styles["index-category-link"]}>
             <img src={quizImage}  alt="Quiz "/>
               <div className={styles["dark-overlay"]}>
-                <p className={styles["index-category-description"]}>This is a JavaScript quiz that I designed and built. It is timed and uses local storage to keep your scores. Click on this image and test your knowledge and see if you can win the special BONUS high score! </p>
+                <p className={styles["index-category-description"]}>This is a JavaScript quiz that I designed and built. I used dynamically updated HTML, CSS, and JavaScript to build it. I ultalized local storage to allow you to save your scores. Click on this image and test your knowledge and see if you can win the special BONUS high score! </p>
               </div>
               
             </a>
