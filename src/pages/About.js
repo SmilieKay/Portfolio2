@@ -25,8 +25,9 @@ render() {
         <div className ={styles["index-about-img"]}>
         <img src={imageSrc} alt="Cheryl Miller"/></div>
         <div className ={styles["index-about-text"]}>
-       <h2>A Little Bit About Me</h2>
-       <p>I would like to take a moment to introduce myself and let you know more about me. I have worked in the medical field for over 20 years. I believe that background in medical gives many skills that make me a better employee. I have always loved problem solving and creative thinking combined with a strong desire to learn. My desire to learn and puzzle/problem solving is what sparked my desire to learn about computer coding and web design. It provides the challenge of puzzle solving and the opportunity to be artistic and create new things. Web Design/Coding fuels my fire for learning and creating. Feel free to contact me to learn more about me.</p>
+       <h2 className ={styles["main-intro"]}>Cheryl K. Miller </h2>
+       <p>I would like to take a moment to introduce myself and let you know more about me. I am 43 years old with a strong drive to exceed expectations, I have always had a drive for learning  and I pick up on new skills very quickly. I have a long work history in the medical field that I feel gives me a well rounded ability to work in a wide variety of environments and with a broad array of people.   I recently graduated from a Full stack web development bootcamp through Washington University where I learned a variety of skills. Some of the skills I learned durring bootcamp are HTML, CSS, Git, JavaScript , Bootstrap, The DOM, APIs, JQuery, JSON, AJAX, Node, ES6, Object-oriented programming, Express, MySQL, MVC paradigm, Sequelize, Testing, Agile development, Progressive Web, Apps, React, NoSQL, MERN Stack, and Computer Science fundamentals.  All of this is done in a fast paced environment that encourages the ability to work in groups or individually.  
+ Feel free to contact me to learn more about me.</p>
       
        </div></div>
       </section>
