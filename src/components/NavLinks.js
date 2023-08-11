@@ -6,11 +6,11 @@ const NavLinks = () => {
             Home
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="/about">
             About Me
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="/projects">
             Portfolio
