@@ -37,8 +37,8 @@ textarea {
 
 /* allows me to create variables and use them in the whole stylesheet */
 :root {
-  --gradient-colors: #000087, #ff00ff, #00ffff, #5f00af;
-  --word-colors: #00ffff, #000087, #ff00ff;
+  --gradient-colors:	#d7af87, #d7af00, #d7875f, #d75f5f;
+  --word-colors:#d7af00, #d7875f, #d75f5f;
 }
 /*sets the font size to 10px but using percentages so it will be adjust for those that have their preferred font size larger. Setting the font to 10px makes it easier to determine the 
 size in rem for the font. */
